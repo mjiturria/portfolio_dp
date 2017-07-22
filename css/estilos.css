@@ -1,0 +1,115 @@
+/* Sacamos el padding lateral del container-fluid, sólo para el contenedor general, y tambien para todos los row de bootstrap */
+.container-general {
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+section {
+  text-align: center;
+}
+
+section h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Sección Home */
+section.home {
+  background: url(../imagenes/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+.home-title {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #fff;
+}
+
+.home-title h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 10vw; /* tamaño relativo segun el tamaño de pantalla */
+}
+
+.home-title p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.7vw;
+}
+
+.navbar-default {
+  border: none;
+}
+
+/* Sección About*/
+section.about {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  color: black;
+  background-color: white;
+}
+
+section.services {
+  padding-bottom: 5%;
+  color: black;
+}
+
+section.services .service {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background-color: #e6e6ec;
+  margin-bottom: 10px;
+}
+
+
+section.services .service a {
+  color: black; /* sino es del color tipico de a */
+  font-size: 50px; /* Los iconos */
+}
+
+section.portfolio h3{
+  color: white;
+  padding-bottom: 3%;
+}
+
+/* Centro las imágenes en el carousel */
+section.portfolio .carousel-inner img {
+  margin: auto;
+  max-height: 500px; /* limito la altura máxima del carousel, por si hay imágenes muy grandes */
+}
+
+/* Sección Map */
+section.map .map-img {
+  padding: 0; /* Le saco el padding lateral q le agrega bootstrap al col */
+  padding-top: 5%;
+}
+
+/* Footer */
+footer {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: #adadbf;
+}
+footer a:hover {
+  color: white;
+}
